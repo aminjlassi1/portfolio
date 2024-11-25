@@ -1,0 +1,236 @@
+/* Global styles */
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    overflow-x: hidden;
+  }
+  
+  .section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section:nth-child(even) {
+    background-color: #f0f0f0; /* Alternating background color */
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 2rem;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 97%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ff5722;
+    text-transform: uppercase;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav-links li {
+    display: inline-block;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links li a:hover {
+    color: #ff5722;
+  }
+  
+  .contact-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .contact-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  /* Hero section styles */
+  .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 6rem 2rem;
+    gap: 2rem;
+    margin-top: 4rem;
+    background-color: #fff;
+  }
+  
+  .hero-text {
+    max-width: 50%;
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    color: #222;
+    margin: 0 0 1rem;
+  }
+  
+  .hero-text .highlight {
+    color: #ff5722;
+  }
+  
+  .hero-text p.sub-title {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0.5rem 0 1rem;
+  }
+  
+  .hero-buttons {
+    margin-top: 1.5rem;
+  }
+  
+  .hero-buttons .hire-btn,
+  .hero-buttons .experience-btn {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .hero-buttons .hire-btn {
+    background-color: #ff5722;
+    color: white;
+    margin-right: 0.5rem;
+  }
+  
+  .hero-buttons .hire-btn:hover {
+    background-color: #e64a19;
+    transform: scale(1.05);
+  }
+  
+  .hero-buttons .experience-btn {
+    background-color: #ddd;
+    color: #333;
+  }
+  
+  .hero-buttons .experience-btn:hover {
+    background-color: #ccc;
+    transform: scale(1.05);
+  }
+  
+  /* Hero image styles */
+  .hero-image img {
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 6px solid #ff5722;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Section styles */
+  .section h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 1rem;
+  }
+  
+  .section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  .section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .section ul li {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Footer styles */
+  footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #222;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 10px;
+      background-color: #222;
+      padding: 1rem;
+      display: none;
+      border-radius: 5px;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .contact-btn {
+      margin-top: 1rem;
+    }
+  
+    .hero {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-text {
+      max-width: 100%;
+    }
+  
+    .hero-image img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
